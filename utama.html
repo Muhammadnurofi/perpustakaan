@@ -1,0 +1,284 @@
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    <title>Library 16-17</title>
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <style type="text/css">
+	      #bungkus{
+	        width: 1024px;
+	        margin: auto;
+	      }
+
+	    </style>
+	</head>
+  	<body>
+  		<body bgcolor="silver">
+    	<div id="bungkus">
+		    <nav class="navbar navbar-default">
+		      <div class="container-fluid">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand" href="utama.html">Perpustakaan</a>
+		        </div>
+
+		        <!-- Collect the nav links, forms, and other content for toggling -->
+		        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		          <ul class="nav navbar-nav">
+		            <li class="active"><a href="utama.html">Home<span class="sr-only">(current)</span></a></li>
+		            <li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeri <span class="caret"></span></a>
+		              <ul class="dropdown-menu">
+		                <li><a href="tentangkita.html">About Me</a></li>
+		                <li><a href="formtambahsiswa.html">Tambah Anggota</a></li>
+		                <li><a href="formpeminjaman.html">Pinjam Buku</a></li>
+		                <li><a href="formpengembalian.html">Pengembalian buku</a></li>
+		              </ul>
+		            </li>
+		          </ul>
+		          <ul class="nav navbar-nav navbar-right">
+		          	<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+						  <a href="tablebuku.html"></a>
+						  <input type="text" class="form-control" placeholder="Search">
+						</div>
+					  <button type="submit" class="btn btn-default">Pencarian</button>
+					</form>
+					<li><a href="datapengurus.html">Pengurus Perpus</a></li>
+		            <li><a href="kontak.html">Contact</a></li>
+		            <li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akun <span class="caret"></span></a>
+		              <ul class="dropdown-menu">
+		              	<li><a href="formgudang.html">Data perpus</a></li>
+		                <li><a href="testing.html">Data Buku Hari Ini</a></li>
+		                <li><a href="login.html">Logout</a></li>
+		              </ul>
+		            </li>
+		          </ul>
+		        </div><!-- /.navbar-collapse -->
+		      </div><!-- /.container-fluid -->
+		    </nav>
+		    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+				<ol class="carousel-indicators">
+				   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				   <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				   <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+			  	<!-- Wrapper for slides -->
+			  	<div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="gekgek.png" alt="icon">
+				      <div class="carousel-caption">
+				        ...
+				     </div>
+			    </div>
+			    <div class="item">
+			      <img src="gracia.jpg" alt="icon">
+			      	<div class="carousel-caption">
+			        	...
+			      	</div>
+			    </div>
+			    ...
+			  </div>
+
+			  <!-- Controls -->
+			  	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    	<span class="sr-only">Previous</span>
+			  	</a>
+			  	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    	<span class="sr-only">Next</span>
+			  	</a>
+			</div>
+		    <!--Tab-->
+		    <div>
+			    <div class="container">
+				  <marquee><h2>Selamat Datang Di Perpustakaan</h2></marquee>
+				  	<ul class="nav nav-tabs">
+					    <li><a data-toggle="tab" href="#menu1">Kategori buku</a></li>
+					    <li><a data-toggle="tab" href="#menu2">Jadwal Buka Perpustakaan</a></li>
+					    <li><a data-toggle="tab" href="#menu3">Data Peminjam</a></li>
+				  	</ul>
+
+				  	<div class="tab-content">
+				    	<div id="menu1" class="tab-pane fade">
+				      		<h3>Kategori Buku</h3>
+				      		<div class="row">
+				      			<div class="col-md-6">
+				      				<div class="">
+							           	<div class="form-group">
+						   					<div class="col-sm-10">
+									        	<select class="form-control">
+												  <option>Ilmu Pengetahuan Umum</option>
+												  <option>Tips and Trik</option>
+												  <option>Kitab dan salafiyah</option>
+												  <option>Biografi</option>
+												</select>
+						      				</div>
+
+						      				<button type="submit" class="btn btn-default">Pencarian</button>
+						     			</div>
+						            </div>	
+				      			</div>
+				      			<div class="col-md-6">
+				      				<div class="thumbnail">
+							            <img src="11.jpg" alt="">
+							            <center><h1>Gubernur Jawa Barat</h1></center>
+							            <p>Perpusda2016</p>
+						            </div>	
+				      			</div>
+				      		</div>
+				    	</div>
+					    <div id="menu2" class="tab-pane fade">
+					      <h3>Jadwal Perpustakaan</h3>
+					      <div class="row">
+				      			<div class="container">
+				      				<table class="table table-bordered">
+								    	<thead>
+									      <tr>
+									        <th>Hari</th>
+									        <th>Pagi</th>
+									        <th>Siang</th>
+									        <th>Sore</th>
+									        <th>Malam</th>
+									      </tr>
+									    </thead>
+								    <tbody>
+								      <tr>
+								        <td>Senin</td>
+								        <td>Pukul : 08:00-11:00</td>
+								        <td>Pukul : 13:00-15:00</td>
+								        <td>Pukul : 16:00-18:00</td>
+								        <td>Pukul : 19:00-21:00</td>
+								      </tr>
+								      <tr>
+								        <td>Selasa</td>
+								        <td>Pukul : 08:00-11:00</td>
+								        <td>Pukul : 13:00-15:00</td>
+								        <td>Pukul : 16:00-18:00</td>
+								        <td>Pukul : 19:00-21:00</td>
+								        <td></td>
+								      </tr>
+								      <tr>
+								        <td>Rabu</td>
+								        <td>Pukul : 08:00-11:00</td>
+								        <td>Pukul : 13:00-15:00</td>
+								        <td>Pukul : 16:00-18:00</td>
+								        <td>Pukul : 19:00-21:00</td>
+								        <td></td>
+								      </tr>
+								      <tr>
+								        <td>Kamis</td>
+								        <td>Pukul : 08:00-11:00</td>
+								        <td>Pukul : 13:00-15:00</td>
+								        <td>Pukul : 16:00-18:00</td>
+								        <td>Pukul : 19:00-21:00</td>
+								      </tr>
+								    </tbody>
+								  </table>
+								  <p>*Note : Sewaktu-waktu Jadwal Akan Berubah...</p>
+				      			</div>
+				      		</div>
+					    </div>
+				    	<div id="menu3" class="tab-pane fade">
+				      		<h3>Status Peminjam</h3>
+				      		<div class="col-md-12">
+				      			<div class="container">            
+									<table class="table table-bordered">
+								    	<thead>
+									      <tr>
+									        <th>ID Card</th>
+									        <th>Nama Siswa</th>
+									        <th>Kelas</th>
+									        <th>Kategori Buku</th>
+									        <th>Buku Yang Di Pinjamkan</th>
+									      </tr>
+									    </thead>
+								    <tbody>
+								      <tr>
+								        <td>01.003.027</td>
+								        <td>Juhaedi</td>
+								        <td>XII ips 1</td>
+								        <td>Tips and Trik</td>
+								        <td>Cara Membuat Layout</td>
+								      </tr>
+								      <tr>
+								        <td>01.003.028</td>
+								        <td>Febriani</td>
+								        <td>XII ips 4</td>
+								        <td>Kitab dan Salafiyah</td>
+								        <td>Kitab Al-fiyyah(ibnu Malik)</td>
+								      </tr>
+								      <tr>
+								        <td>01.003.029</td>
+								        <td>Ahmad Fani</td>
+								        <td>XII ips 2</td>
+								        <td>Biografi</td>
+								        <<td>B J Habibie</td>
+								      </tr>
+								      <tr>
+								        <td>01.003.030</td>
+								        <td>Agung Yusuf M U</td>
+								        <td>XII ips 2</td>
+								        <td>Kitab dan Salafiyah</td>
+								        <td>Kitab Jurumiyyah</td>
+								      </tr>
+								    </tbody>
+								  </table>
+								  	<nav aria-label="Page navigation">
+										<ul class="pagination">
+									    	<li>
+									    		<a href="#" aria-label="Previous">
+									        		<span aria-hidden="true">&laquo;</span>
+									      		</a>
+									    	</li>
+										    <li><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li>
+										      	<a href="#" aria-label="Next">
+										        	<span aria-hidden="true">&raquo;</span>
+										      	</a>
+									    	</li>
+									  	</ul>
+									</nav>
+								</div>	
+				      		</div>
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+		    <div class="row">
+		      
+		    	<div class="well well-lg">
+		          
+		        	<h3>Perpustakaan 2016</h3>
+
+		    	</div>
+		    </div>
+		</div>
+		<script type="text/javascript">
+			jQuery(document).ready (function ($) {
+				$ (#'tabs').tab();
+			});
+		</script>
+  	</body>
+</html>
